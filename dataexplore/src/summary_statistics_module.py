@@ -50,35 +50,35 @@ class SummaryStatistics:
         missing_data = self.data.isnull().sum()
         print(missing_data[missing_data > 0])
 
-# Example usage:
-data = pd.DataFrame({
-    'A': [1, 2, 3, 4, 5],
-    'B': [2, 4, None, 3, 5],  # Inserting a missing value for demonstration
-    'C': [5, 4, 3, 2, 1]
-})
+# # Example usage:
+# data = pd.DataFrame({
+#     'A': [1, 2, 3, 4, 5],
+#     'B': [2, 4, None, 3, 5],  # Inserting a missing value for demonstration
+#     'C': [5, 4, 3, 2, 1]
+# })
 
-summary_stats = SummaryStatistics(data)
-summary_stats.general_info()
-summary_stats.summary_statistics()
-summary_stats.missing_data()
+# summary_stats = SummaryStatistics(data)
+# summary_stats.general_info()
+# summary_stats.summary_statistics()
+# summary_stats.missing_data()
 
-# Calculating summary statistics
-mean = summary_stats.calculate_mean()
-median = summary_stats.calculate_median()
-mode = summary_stats.calculate_mode()
-std_dev = summary_stats.calculate_standard_deviation()
-variance = summary_stats.calculate_variance()
-quartiles = summary_stats.calculate_quartiles()
+# # Calculating summary statistics
+# mean = summary_stats.calculate_mean()
+# median = summary_stats.calculate_median()
+# mode = summary_stats.calculate_mode()
+# std_dev = summary_stats.calculate_standard_deviation()
+# variance = summary_stats.calculate_variance()
+# quartiles = summary_stats.calculate_quartiles()
 
-# Summarizing missing values
-missing_summary = summary_stats.summarize_missing_values()
+# # Summarizing missing values
+# missing_summary = summary_stats.summarize_missing_values()
 
-print("Mean:", mean)
-print("Median:", median)
-print("Mode:", mode)
-print("Standard Deviation:", std_dev)
-print("Variance:", variance)
-print("Quartiles:")
-print(quartiles)
-print("Missing Values Summary:")
-print(missing_summary)
+# print("Mean:", mean)
+# print("Median:", median)
+# print("Mode:", mode)
+# print("Standard Deviation:", std_dev)
+# print("Variance:", variance)
+# print("Quartiles:")
+# print(quartiles)
+# print("Missing Values Summary:")
+# print(missing_summary)

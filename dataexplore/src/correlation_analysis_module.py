@@ -38,36 +38,36 @@ class CorrelationAnalysis:
         else:
             return "Non-numeric columns. Cannot perform correlation significance testing."
 
-# Example usage:
-data = pd.DataFrame({
-    'A': [1, 2, 3, 4, 5],
-    'B': [2, 4, 6, 8, 10],
-    'C': [5, 4, 3, 2, 1]
-})
+# # Example usage:
+# data = pd.DataFrame({
+#     'A': [1, 2, 3, 4, 5],
+#     'B': [2, 4, 6, 8, 10],
+#     'C': [5, 4, 3, 2, 1]
+# })
 
-correlation_analysis = CorrelationAnalysis(data)
+# correlation_analysis = CorrelationAnalysis(data)
 
-# Calculate correlation coefficients
-correlation_coefficients = correlation_analysis.calculate_correlation()
-print("Correlation Coefficients:")
-print(correlation_coefficients)
+# # Calculate correlation coefficients
+# correlation_coefficients = correlation_analysis.calculate_correlation()
+# print("Correlation Coefficients:")
+# print(correlation_coefficients)
 
-# Generate correlation matrix
-correlation_matrix = correlation_analysis.generate_correlation_matrix()
-print("\nCorrelation Matrix:")
-print(correlation_matrix)
+# # Generate correlation matrix
+# correlation_matrix = correlation_analysis.generate_correlation_matrix()
+# print("\nCorrelation Matrix:")
+# print(correlation_matrix)
 
-# Visualize correlation matrix (heatmap)
-correlation_analysis.visualize_correlation_matrix()
+# # Visualize correlation matrix (heatmap)
+# correlation_analysis.visualize_correlation_matrix()
 
-# Calculate Pearson correlation coefficient
-pearson_corr = correlation_analysis.calculate_pearson_correlation('A', 'B')
-print("\nPearson Correlation Coefficient between A and B:", pearson_corr)
+# # Calculate Pearson correlation coefficient
+# pearson_corr = correlation_analysis.calculate_pearson_correlation('A', 'B')
+# print("\nPearson Correlation Coefficient between A and B:", pearson_corr)
 
-# Calculate Spearman correlation coefficient
-spearman_corr = correlation_analysis.calculate_spearman_correlation('A', 'B')
-print("Spearman Correlation Coefficient between A and B:", spearman_corr)
+# # Calculate Spearman correlation coefficient
+# spearman_corr = correlation_analysis.calculate_spearman_correlation('A', 'B')
+# print("Spearman Correlation Coefficient between A and B:", spearman_corr)
 
-# Test correlation significance
-correlation_significance = correlation_analysis.test_correlation_significance('A', 'B')
-print("\nCorrelation Significance Testing (Pearson, Spearman):", correlation_significance)
+# # Test correlation significance
+# correlation_significance = correlation_analysis.test_correlation_significance('A', 'B')
+# print("\nCorrelation Significance Testing (Pearson, Spearman):", correlation_significance)
