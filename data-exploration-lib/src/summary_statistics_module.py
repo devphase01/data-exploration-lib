@@ -24,6 +24,31 @@ class SummaryStatistics:
 
     def summarize_missing_values(self):
         return self.data.isnull().sum()
+    
+    def general_info(self):
+        """
+        Display general information about the dataset.
+        """
+        print("General Information:")
+        print(self.data.info())
+        print("\nNumber of Rows:", self.data.shape[0])
+        print("Number of Columns:", self.data.shape[1])
+
+    def summary_statistics(self):
+        """
+        Display summary statistics for each column in the dataset.
+        """
+        print("Summary Statistics:")
+        summary_stats = self.data.describe(include='all')
+        print(summary_stats)
+
+    def missing_data(self):
+        """
+        Display information about missing data in the dataset.
+        """
+        print("Missing Data:")
+        missing_data = self.data.isnull().sum()
+        print(missing_data[missing_data > 0])
 
 # Example usage:
 data = pd.DataFrame({
@@ -33,6 +58,9 @@ data = pd.DataFrame({
 })
 
 summary_stats = SummaryStatistics(data)
+summary_stats.general_info()
+summary_stats.summary_statistics()
+summary_stats.missing_data()
 
 # Calculating summary statistics
 mean = summary_stats.calculate_mean()
