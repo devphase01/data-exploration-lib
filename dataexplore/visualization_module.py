@@ -61,22 +61,22 @@ class DataVisualizor:
       plt.title("Correlation Matrix Heatmap")
       plt.show()
 
-iris = sns.load_dataset('iris')
+# iris = sns.load_dataset('iris')
 
-# Assuming you have defined the DataVisualizor class as shown previously
-visualizer = DataVisualizor(iris)
+# # Assuming you have defined the DataVisualizor class as shown previously
+# visualizer = DataVisualizor(iris)
 
-# Histogram of the sepal length
-visualizer.plot_histogram('sepal_length')
+# # Histogram of the sepal length
+# visualizer.plot_histogram('sepal_length')
 
-# Scatter plot of sepal length vs. sepal width
-visualizer.plot_scatter('sepal_length', 'sepal_width')
+# # Scatter plot of sepal length vs. sepal width
+# visualizer.plot_scatter('sepal_length', 'sepal_width')
 
-# Boxplot of petal length
-visualizer.plot_boxplot('petal_length')
+# # Boxplot of petal length
+# visualizer.plot_boxplot('petal_length')
 
-iris_numeric = iris.drop(columns='species')
-visualizer = DataVisualizor(iris_numeric)
+# iris_numeric = iris.drop(columns='species')
+# visualizer = DataVisualizor(iris_numeric)
 
-# Correlation matrix heatmap
-visualizer.plot_correlation_matrix()
+# # Correlation matrix heatmap
+# visualizer.plot_correlation_matrix()
