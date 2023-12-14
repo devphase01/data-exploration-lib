@@ -1,5 +1,5 @@
 import pandas as pd
-from dataexplore.src.summary_statistics_module import SummaryStatistics
+from dataexplore.summary_statistics_module import SummaryStatistics
 
 data = {
     'A': [1, 2, 3, 4, 5],
