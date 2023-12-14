@@ -6,7 +6,6 @@ from sklearn.preprocessing import (
     RobustScaler,
 )
 
-
 class DataScaler:
     def __init__(self, method="standard"):
         """
